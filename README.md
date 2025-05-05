@@ -1,6 +1,8 @@
+<!-- 
+
 <p align="center">
   <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-anh-trang-den-meo-den-heinz-inkythuatso-02-16-04-57.jpg" width="50" style="border-radius: 50%" alt="avatar"/>
-</p>
+</p> -->
 
 
 <h1 align="center">🎮 Xin chào! Tôi là Nguyễn Ngọc An</h1>
