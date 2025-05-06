@@ -16,7 +16,7 @@
 
 ## 🧑‍💻 Giới thiệu
 
-- 🎓 Sinh viên tại: ** Đại học PhenikaaPhenikaa **
+- 🎓 Sinh viên tại: ** Đại học Phenikaa **
 - 🕹️ Chuyên ngành: **Lập trình Game / Game Developer**
 - 🌱 Đang học: **Unity, Unreal Engine, C#, thiết kế gameplay**
 - 🎯 Mục tiêu: Trở thành một lập trình viên game sáng tạo, làm việc trong studio chuyên nghiệp
