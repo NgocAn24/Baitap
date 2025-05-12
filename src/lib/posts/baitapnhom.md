@@ -51,7 +51,7 @@ Apache Airflow sẽ được ứng dụng vào hệ thống học trực tuyến
 -	Kết nối API để lấy dữ liệu từ hệ LMS (Learning Management System).
 ________________________________________
 ## 2. Kế hoạch dự kiến về bài giữa kỳ
-**🎯 **Bài toán áp dụng:**
+**Bài toán áp dụng:**
 Tự động hóa phân tích dữ liệu học viên và gửi email nhắc nhở trong hệ thống học trực tuyến bằng Apache Airflow.
 ________________________________________
 **🛠 Chi tiết bài toán:**
@@ -64,16 +64,16 @@ ________________________________________
 **✅ Giải pháp đề xuất với Apache Airflow:**
 Sử dụng Apache Airflow để tạo một pipeline dữ liệu gồm các bước:
 1.	Task 1 – Lấy dữ liệu học viên:
-o	Kết nối đến cơ sở dữ liệu hoặc API của hệ thống LMS.
-o	Tải dữ liệu học viên và tiến độ học tập.
+-	Kết nối đến cơ sở dữ liệu hoặc API của hệ thống LMS.
+-	Tải dữ liệu học viên và tiến độ học tập.
 2.	Task 2 – Phân tích dữ liệu:
-o	Xác định học viên chưa hoàn thành các bài học yêu cầu.
-o	Tạo bảng thống kê theo từng khóa học.
+-	Xác định học viên chưa hoàn thành các bài học yêu cầu.
+-	Tạo bảng thống kê theo từng khóa học.
 3.	Task 3 – Tạo báo cáo:
-o	Xuất kết quả thành file Excel hoặc PDF.
+-	Xuất kết quả thành file Excel hoặc PDF.
 4.	Task 4 – Gửi email:
-o	Gửi email nhắc học viên chưa hoàn thành bài.
-o	Gửi bản báo cáo cho quản trị viên hệ thống.
+-	Gửi email nhắc học viên chưa hoàn thành bài.
+-	Gửi bản báo cáo cho quản trị viên hệ thống.
 ________________________________________
 **🗓 Lộ trình thực hiện dự kiến:**
 Tuần	Công việc chính
