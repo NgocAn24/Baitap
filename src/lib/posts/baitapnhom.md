@@ -30,7 +30,8 @@ ________________________________________
 -	Giao diện web UI giúp dễ dàng theo dõi và điều phối công việc.
 -	Hỗ trợ nhiều hệ sinh thái (MySQL, Postgres, GCP, AWS, Docker, Spark,...).
 -	Tự động hóa mọi pipeline xử lý dữ liệu bằng code Python có thể kiểm soát.
- **Điểm yếu:**
+
+**Điểm yếu:**
 -	Cài đặt ban đầu hơi phức tạp.
 -	Không phù hợp cho tác vụ thời gian thực (real-time).
 -	Cần hiểu rõ kiến trúc DAG để thiết kế hiệu quả.
