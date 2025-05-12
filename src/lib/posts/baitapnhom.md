@@ -36,19 +36,16 @@ ________________________________________
 -	Không phù hợp cho tác vụ thời gian thực (real-time).
 -	Cần hiểu rõ kiến trúc DAG để thiết kế hiệu quả.
 ________________________________________
-- So sánh với các thư viện/framework khác:
-- 
-Tiêu chí	Airflow	Luigi	Prefect	Cron + Script
+### ✳️ So sánh với các thư viện/framework khác:
 
-Lập lịch
+| Tiêu chí                 | Airflow                     | Luigi                      | Prefect                    | Cron + Script              |
+|--------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|
+| **Lập lịch**             | Có                          | Có                          | Có                          | Có                          |
+| **Theo dõi trực quan**   | Web UI đẹp                  | Web UI cơ bản               | Web UI hiện đại             | Không                       |
+| **Viết workflow bằng code** | Python                   | Python                      | Python                      | Bash/Python                 |
+| **Tính mở rộng**         | Cao (Kubernetes, Celery)    | Vừa                         | Cao                         | Thấp                        |
+| **Hỗ trợ phân nhánh logic** | Có                      | Có                          | Có                          | Khó khăn                    |
 
-Theo dõi trực quan	Web UI đẹp	Web UI cơ bản	Web UI hiện đại	Không
-
-Viết workflow bằng code	Python	Python	Python	Bash/Python
-
-Tính mở rộng	Cao (Kubernetes, Celery)	Vừa	Cao	Thấp
-
-Hỗ trợ phân nhánh logic	Có	Có	Có	Khó khăn
 ________________________________________
 **Ứng dụng:** 
 Apache Airflow sẽ được ứng dụng vào hệ thống học trực tuyến để:
