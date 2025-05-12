@@ -78,10 +78,15 @@ ________________________________________
 **🗓 Lộ trình thực hiện dự kiến:**
 Tuần	Công việc chính
 Tuần 1	Tìm hiểu cơ bản về Apache Airflow, DAG, Task
+
 Tuần 2	Thiết kế DAG pipeline đơn giản (fetch + process dữ liệu)
+
 Tuần 3	Tích hợp task gửi email và tạo báo cáo Excel
+
 Tuần 4	Thử nghiệm pipeline, xử lý lỗi, tinh chỉnh DAG
+
 Tuần 5	Tích hợp pipeline với web (nếu cần) hoặc mock dashboard
+
 Tuần 6	Viết báo cáo, chuẩn bị file nộp và thuyết trình
 ________________________________________
 **📦 Kết quả kỳ vọng khi nộp bài giữa kỳ:**
