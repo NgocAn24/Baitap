@@ -37,11 +37,17 @@ ________________________________________
 -	Cần hiểu rõ kiến trúc DAG để thiết kế hiệu quả.
 ________________________________________
 - So sánh với các thư viện/framework khác:
+- 
 Tiêu chí	Airflow	Luigi	Prefect	Cron + Script
-Lập lịch	Có	Có	Có	Có
+
+Lập lịch
+
 Theo dõi trực quan	Web UI đẹp	Web UI cơ bản	Web UI hiện đại	Không
+
 Viết workflow bằng code	Python	Python	Python	Bash/Python
+
 Tính mở rộng	Cao (Kubernetes, Celery)	Vừa	Cao	Thấp
+
 Hỗ trợ phân nhánh logic	Có	Có	Có	Khó khăn
 ________________________________________
 **Ứng dụng:** 
