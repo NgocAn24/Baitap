@@ -114,6 +114,7 @@ if __name__ == "__main__":
 ```
 
 #### Kết quả chạy
+![Screenshot 2025-05-18 193403](https://github.com/user-attachments/assets/0e7bb2af-3dc4-4859-b9b0-6568e2ceb4df)
 
 ##### Giải thích kết quả
 Khởi tạo các nút: Ba nút node1, node2, và node3 được tạo ra với các ID khác nhau (1, 2, 3).
