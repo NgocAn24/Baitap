@@ -30,7 +30,8 @@ ________________________________________
 -	Giao diện web UI giúp dễ dàng theo dõi và điều phối công việc.
 -	Hỗ trợ nhiều hệ sinh thái (MySQL, Postgres, GCP, AWS, Docker, Spark,...).
 -	Tự động hóa mọi pipeline xử lý dữ liệu bằng code Python có thể kiểm soát.
- **Điểm yếu:**
+
+**Điểm yếu:**
 -	Cài đặt ban đầu hơi phức tạp.
 -	Không phù hợp cho tác vụ thời gian thực (real-time).
 -	Cần hiểu rõ kiến trúc DAG để thiết kế hiệu quả.
@@ -54,7 +55,7 @@ Apache Airflow sẽ được ứng dụng vào hệ thống học trực tuyến
 -	Kết nối API để lấy dữ liệu từ hệ LMS (Learning Management System).
 ________________________________________
 ## 2. Kế hoạch dự kiến về bài giữa kỳ
-**🎯 **Bài toán áp dụng:**
+**Bài toán áp dụng:**
 Tự động hóa phân tích dữ liệu học viên và gửi email nhắc nhở trong hệ thống học trực tuyến bằng Apache Airflow.
 ________________________________________
 **🛠 Chi tiết bài toán:**
