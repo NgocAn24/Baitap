@@ -5,7 +5,7 @@ updated: "2025-10-26"
 categories:
   - "ungdungphantan"
   - "baitaonhom"
-coverImage: "https://raw.githubusercontent.com/apache/airflow/19ebcac2395ef9a6b6ded3a2faa29dc960c1e635/docs/apache-airflow/img/logos/wordmark_1.png"
+coverImage: "https://vegastar.com.vn/wp-media/2025/02/giao-thuc-mang-la-gi-vegastar-1.png"
 coverWidth: 16
 coverHeight: 9
 excerpt: cre Nhom 20.
