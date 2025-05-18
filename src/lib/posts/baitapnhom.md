@@ -35,13 +35,16 @@ ________________________________________
 -	Không phù hợp cho tác vụ thời gian thực (real-time).
 -	Cần hiểu rõ kiến trúc DAG để thiết kế hiệu quả.
 ________________________________________
-- So sánh với các thư viện/framework khác:
-Tiêu chí	Airflow	Luigi	Prefect	Cron + Script
-Lập lịch	Có	Có	Có	Có
-Theo dõi trực quan	Web UI đẹp	Web UI cơ bản	Web UI hiện đại	Không
-Viết workflow bằng code	Python	Python	Python	Bash/Python
-Tính mở rộng	Cao (Kubernetes, Celery)	Vừa	Cao	Thấp
-Hỗ trợ phân nhánh logic	Có	Có	Có	Khó khăn
+### ✳️ So sánh với các thư viện/framework khác:
+
+| Tiêu chí                 | Airflow                     | Luigi                      | Prefect                    | Cron + Script              |
+|--------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|
+| **Lập lịch**             | Có                          | Có                          | Có                          | Có                          |
+| **Theo dõi trực quan**   | Web UI đẹp                  | Web UI cơ bản               | Web UI hiện đại             | Không                       |
+| **Viết workflow bằng code** | Python                   | Python                      | Python                      | Bash/Python                 |
+| **Tính mở rộng**         | Cao (Kubernetes, Celery)    | Vừa                         | Cao                         | Thấp                        |
+| **Hỗ trợ phân nhánh logic** | Có                      | Có                          | Có                          | Khó khăn                    |
+
 ________________________________________
 **Ứng dụng:** 
 Apache Airflow sẽ được ứng dụng vào hệ thống học trực tuyến để:
@@ -64,24 +67,29 @@ ________________________________________
 **✅ Giải pháp đề xuất với Apache Airflow:**
 Sử dụng Apache Airflow để tạo một pipeline dữ liệu gồm các bước:
 1.	Task 1 – Lấy dữ liệu học viên:
-o	Kết nối đến cơ sở dữ liệu hoặc API của hệ thống LMS.
-o	Tải dữ liệu học viên và tiến độ học tập.
+-	Kết nối đến cơ sở dữ liệu hoặc API của hệ thống LMS.
+-	Tải dữ liệu học viên và tiến độ học tập.
 2.	Task 2 – Phân tích dữ liệu:
-o	Xác định học viên chưa hoàn thành các bài học yêu cầu.
-o	Tạo bảng thống kê theo từng khóa học.
+-	Xác định học viên chưa hoàn thành các bài học yêu cầu.
+-	Tạo bảng thống kê theo từng khóa học.
 3.	Task 3 – Tạo báo cáo:
-o	Xuất kết quả thành file Excel hoặc PDF.
+-	Xuất kết quả thành file Excel hoặc PDF.
 4.	Task 4 – Gửi email:
-o	Gửi email nhắc học viên chưa hoàn thành bài.
-o	Gửi bản báo cáo cho quản trị viên hệ thống.
+-	Gửi email nhắc học viên chưa hoàn thành bài.
+-	Gửi bản báo cáo cho quản trị viên hệ thống.
 ________________________________________
 **🗓 Lộ trình thực hiện dự kiến:**
 Tuần	Công việc chính
 Tuần 1	Tìm hiểu cơ bản về Apache Airflow, DAG, Task
+
 Tuần 2	Thiết kế DAG pipeline đơn giản (fetch + process dữ liệu)
+
 Tuần 3	Tích hợp task gửi email và tạo báo cáo Excel
+
 Tuần 4	Thử nghiệm pipeline, xử lý lỗi, tinh chỉnh DAG
+
 Tuần 5	Tích hợp pipeline với web (nếu cần) hoặc mock dashboard
+
 Tuần 6	Viết báo cáo, chuẩn bị file nộp và thuyết trình
 ________________________________________
 **📦 Kết quả kỳ vọng khi nộp bài giữa kỳ:**
