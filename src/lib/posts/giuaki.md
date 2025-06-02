@@ -153,3 +153,6 @@ Hệ thống quản lý đơn hàng phân tán thể hiện rõ các khái niệ
 
 Kế hoạch kiểm thử đề xuất giúp đảm bảo tính ổn định, độ tin cậy và khả năng mở rộng của hệ thống trong nhiều tình huống thực tế.
 """)
+
+## Link source code
+https://github.com/NgocAn24/Ung_dung_phan_tan
