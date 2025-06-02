@@ -19,6 +19,7 @@ Báo cáo này mô tả quá trình triển khai một hệ thống quản lý �
 ## Tiêu Chí Bắt Buộc
 
 ### 1. Chịu Lỗi (Fault Tolerance)
+![Screenshot (84)](https://github.com/user-attachments/assets/fb66e040-e5b0-4e72-b86c-72401dfe9779)
 
 - Hệ thống sử dụng các kiểm tra sức khỏe (health check) trên các node kho hàng trước khi gán đơn hàng.
 - Nếu một node không truy cập được hoặc không khỏe mạnh, DAG của Airflow sẽ gán đơn hàng cho một node thay thế.
@@ -32,12 +33,17 @@ Báo cáo này mô tả quá trình triển khai một hệ thống quản lý �
 - Hệ thống được thiết kế để chạy trên nhiều máy, các node truy cập được qua các địa chỉ mạng.
 
 ### 3. Sharding hoặc Replication
+![Screenshot (93)](https://github.com/user-attachments/assets/89bbe493-7ce9-44ed-9761-fadcf7cf3ab9)
+
 - Hệ thống triển khai sharding theo vùng miền.
 - Đơn hàng được phân phối đến các node kho hàng dựa trên trường `region` trong đơn.
 - Mỗi node duy trì cơ sở dữ liệu SQLite riêng để lưu trữ đơn hàng cho shard của mình.
-- Không có cơ chế replication dữ liệu giữa các node.
+
 
 ### 4. Giám Sát / Ghi Log Cơ Bản
+
+![Screenshot (92)](https://github.com/user-attachments/assets/ab35d6f4-f299-4d0f-8fd1-589f894d70d9)
+
 - Mỗi node kho ghi log các sự kiện chính như tạo đơn hàng, lỗi.
 - Endpoint kiểm tra sức khỏe cung cấp dữ liệu giám sát cơ bản như trạng thái node và tải hiện tại (số đơn đang xử lý).
 - DAG của Airflow ghi log việc nhận đơn, gán node, và kết quả xử lý đơn hàng.
@@ -60,6 +66,7 @@ Hệ thống hiện tại chưa triển khai hầu hết các tiêu chí tùy ch
 - **Bầu chọn leader:** Chưa triển khai.
 - **Bảo mật:** Giao tiếp HTTP cơ bản, không có xác thực hoặc mã hóa.
 - **Tự động triển khai:** Có file Docker Compose cho một số thành phần, nhưng chưa có quy trình triển khai tự động hoàn chỉnh.
+
 
 ---
 
@@ -128,11 +135,14 @@ Hệ thống hiện tại chưa triển khai hầu hết các tiêu chí tùy ch
 
 ### Triển Khai
 1. Các dịch vụ Docker Compose
+2. 
+3. ![Screenshot (89)](https://github.com/user-attachments/assets/c9e74365-5699-4ee2-829c-f09cb731eedb)
+
    - Các node kho (HCM, HN, Đà Nẵng)
    - Thành phần Airflow (webserver, scheduler, PostgreSQL)
    - Cấu hình mạng và volume
 
-2. Giám sát
+4. Giám sát
    - Thu thập log
    - Trạng thái `/health` của node
    - Chỉ số hiệu năng hệ thống
